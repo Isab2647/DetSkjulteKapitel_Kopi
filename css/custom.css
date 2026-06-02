@@ -1,0 +1,169 @@
+
+
+html {
+  color-scheme: light;
+  
+  &.dark {
+    color-scheme: dark;
+  }
+}
+
+body {
+  background-color: var(--primary-bg);
+}
+
+/* Farvevariabler */
+html {
+  /* Primary colors */
+  --primary-bg: light-dark(#fff, #7f6750);
+  --header-footer-bg: light-dark(#f5e8de, #907765 );
+
+  /* Font colors */
+  --text-color: light-dark(#000, #fff);
+  --text-inverted: #fff;
+
+  /* Buttons */
+  --primary-btn: #763f81;
+  --arrow-btn: #f5e8de;
+
+  /* Cards */
+  --podcast-card-bg: #561269;
+  --book-card-bg: light-dark(#f5e8de, #C7BEB7);
+  --filter-bg: #fff;
+  --reviews-card-bg: #763f81;
+  --om-os-card-bg: #763f81;
+  --individual-card-bg: #5a3162;
+  --forms-bg: #c5aabb;
+  --linje: #9f769e;
+}
+
+/* Fonts Desktop */
+h1 {
+  font-family: "Cinzel Decorative Bold";
+  font-size: 3rem;
+}
+h2 {
+  font-family: "Cinzel Decorative Bold";
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+h3 {
+  font-family: "Poppins Bold";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+h4,
+.kob-btn {
+  font-family: "Poppins Regular";
+  font-weight: 400;
+  font-size: 1.375rem;
+}
+h5 {
+  font-family: "Poppins Regular";
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+p,
+.login-btn,
+.opret-btn,
+label,
+span,
+.btn {
+  font-family: "Poppins Light";
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+nav {
+  font-family: "Poppins Light";
+  font-weight: 300;
+}
+
+/* Light/dark mode */
+
+[role="switch"] {
+  --h: 2rem;
+  --w: 3rem;
+  font: inherit;
+  appearance: none;
+  background: gainsboro;
+  height: var(--h);
+  width: var(--w);
+  border: 1px solid #000;
+  cursor: pointer; 
+  border-radius: 9999px;
+}
+
+[role="switch"]::before{
+  content: "";
+  display: block;
+  padding: 3px;
+  height: 100%;
+  aspect-ratio: 1; 
+  background: gray content-box;
+  border-radius: inherit;
+  transition: .3s;
+}
+
+
+[role="switch"]:checked::before {
+  background-color: rgb(90, 91, 90);
+  translate: calc(var(--w) - var(--h));
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+/* Fonts Mobile */
+@media (max-width: 800px) {
+  h1 {
+    font-family: "Cinzel Decorative Bold";
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  h2 {
+    font-family: "Cinzel Decorative Bold";
+    font-weight: 600;
+    font-size: 1.625rem;
+  }
+  h3 {
+    font-family: "Poppins Bold";
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  h4,
+  .kob-btn {
+    font-family: "Poppins Regular";
+    font-weight: 400;
+    font-size: 1.375rem;
+  }
+  h5 {
+    font-family: "Poppins Regular";
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  p,
+  .login-btn,
+  .opret-btn,
+  label,
+  span,
+  .btn {
+    font-family: "Poppins Light";
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  nav {
+    font-family: "Poppins Light";
+    font-weight: 300;
+    font-size: 1.375rem;
+  }
+}
