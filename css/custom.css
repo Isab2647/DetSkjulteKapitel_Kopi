@@ -35,7 +35,7 @@ html {
   --reviews-card-bg: #763f81;
   --om-os-card-bg: #763f81;
   --individual-card-bg: #5a3162;
-  --forms-bg: #c5aabb;
+  --forms-bg: light-dark(#c5aabb, #8B7A85);
   --linje: light-dark(#9f769e, #561269);
 }
 
