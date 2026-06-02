@@ -57,7 +57,7 @@ h1 {
 
 .filter-panel {
   display: none;
-  background: white;
+  background: var(--filter-bg);
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 1.5em;

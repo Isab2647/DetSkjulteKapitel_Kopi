@@ -105,7 +105,7 @@ h1 {
 
 .filter-panel {
   display: none;
-  background: white;
+  background: var(--filter-bg);
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 1.5em;
@@ -310,7 +310,7 @@ hr.kommentarStreg {
   }
 
   .h1 {
-    margin: 4em 0 0.5em 0;
+    margin: 2em 0 0.5em 0;
   }
 
   .grid-1_1_1 {

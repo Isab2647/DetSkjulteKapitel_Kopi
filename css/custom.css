@@ -15,8 +15,9 @@ body {
 /* Farvevariabler */
 html {
   /* Primary colors */
-  --primary-bg: light-dark(#fff, #7f6750);
-  --header-footer-bg: light-dark(#f5e8de, #907765 );
+  --primary-bg: light-dark(#fff, #7d6d5d);
+  /* --primary-bg: light-dark(#fff, #5d5d5d); */
+  --header-footer-bg: light-dark(#f5e8de, #130d09 );
 
   /* Font colors */
   --text-color: light-dark(#000, #fff);
@@ -28,13 +29,14 @@ html {
 
   /* Cards */
   --podcast-card-bg: #561269;
-  --book-card-bg: light-dark(#f5e8de, #C7BEB7);
-  --filter-bg: #fff;
+  --book-card-bg: light-dark(#f5e8de, #423a33);
+  /* --book-card-bg: light-dark(#f5e8de, #8f8882); */
+  --filter-bg: light-dark(#fff, #353434);
   --reviews-card-bg: #763f81;
   --om-os-card-bg: #763f81;
   --individual-card-bg: #5a3162;
   --forms-bg: #c5aabb;
-  --linje: #9f769e;
+  --linje: light-dark(#9f769e, #561269);
 }
 
 /* Fonts Desktop */
@@ -87,28 +89,28 @@ nav {
   --w: 3rem;
   font: inherit;
   appearance: none;
-  background: gainsboro;
+  background: rgb(255, 255, 255);
   height: var(--h);
   width: var(--w);
-  border: 1px solid #000;
+  border: 2px solid var(--linje);
   cursor: pointer; 
   border-radius: 9999px;
+  padding: 2px;
 }
 
 [role="switch"]::before{
   content: "";
   display: block;
-  padding: 3px;
   height: 100%;
   aspect-ratio: 1; 
-  background: gray content-box;
+  background: var(--linje);
   border-radius: inherit;
   transition: .3s;
 }
 
 
 [role="switch"]:checked::before {
-  background-color: rgb(90, 91, 90);
+  background-color: var(--podcast-card-bg);
   translate: calc(var(--w) - var(--h));
 }
 
