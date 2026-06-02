@@ -17,7 +17,7 @@ html {
   /* Primary colors */
   --primary-bg: light-dark(#fff, #7d6d5d);
   /* --primary-bg: light-dark(#fff, #5d5d5d); */
-  --header-footer-bg: light-dark(#f5e8de, #130d09 );
+  --header-footer-bg: light-dark(#f5e8de, #57463a );
 
   /* Font colors */
   --text-color: light-dark(#000, #fff);
