@@ -98,9 +98,9 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 20px;
   padding: 0.5em 1.5em;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.5em; */
 }
 
 .filter-panel {
