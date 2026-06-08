@@ -22,6 +22,7 @@ html {
   /* Font colors */
   --text-color: light-dark(#000, #fff);
   --text-inverted: #fff;
+  --text-darkmode: light-dark(#9f769e, #f5e8de)
 
   /* Buttons */
   --primary-btn: #763f81;
@@ -87,7 +88,6 @@ nav {
 [role="switch"] {
   --h: 2rem;
   --w: 3rem;
-  /* font: inherit; */
   appearance: none;
   background: rgb(255, 255, 255);
   height: var(--h);
@@ -116,10 +116,6 @@ nav {
 
 .visually-hidden {
   position: absolute;
-  /* width: 1px; */
-  /* height: 1px; */
-  /* overflow: hidden; */
-  /* white-space: nowrap; */
   clip-path: inset(100%);
 }
 
@@ -136,7 +132,7 @@ nav {
 
 .theme-label {
   font-size: 0.75rem;
-  color: var(--linje);
+  color: var(--text-darkmode);
 }
 
 /* Fonts Mobile */
