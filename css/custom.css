@@ -22,7 +22,7 @@ html {
   /* Font colors */
   --text-color: light-dark(#000, #fff);
   --text-inverted: #fff;
-  --text-darkmode: light-dark(#9f769e, #f5e8de)
+  --text-darkmode: light-dark(#9f769e, #f5e8de);
 
   /* Buttons */
   --primary-btn: #763f81;
